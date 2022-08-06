@@ -1,0 +1,80 @@
+.slider {
+    width: 100%;
+    height: 60vh;
+    position: relative;
+    overflow: hidden;
+}
+
+.slide {
+    width: 100%;
+    max-width: 800px;
+    height: 450px;
+    position: absolute;
+    transition: all 0.5s;
+}
+
+.slide>picture>img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.slide {
+    width: 100%;
+    max-width: 800px;
+    height: 450px;
+    position: absolute;
+    transition: all 0.5s;
+}
+
+.slide>picture>img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.bottom-img>picture>img {
+    object-position: center bottom;
+}
+
+.buttons {
+    position: absolute;
+    display: flex;
+    bottom: 0;
+}
+
+.mobile {
+    display: none;
+    right: 0px;
+}
+
+.desktop {
+    left: 0px;
+
+}
+
+.btn-prev,
+.btn-next {
+    border-radius: 0;
+    outline-style: none;
+    border-style: none;
+    background-color: var(--black);
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+}
+
+.btn-prev {}
+
+.btn-next {}
+
+@media screen and (max-width: 400px) {
+    .buttons.mobile {
+        display: flex;
+    }   
+    .desktop {
+        display: none;
+    }
+    
+}

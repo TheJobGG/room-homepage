@@ -1,0 +1,19 @@
+:root{
+    /* Colors */
+    --dark-gray: hsl(0, 0%, 63%);
+    --black: hsl(0, 0%, 0%);
+    --white: hsl(0, 0%, 100%);
+    --very-dark-gray: hsl(0, 0%, 27%);
+ 
+    /* Font Size */
+    --font-size: 12px;
+
+    /* Typography family */
+    --league: font-family: 'League Spartan', sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}

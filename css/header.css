@@ -1,0 +1,55 @@
+@import 'guide-style.css';
+
+body {
+    font-family: 'League Spartan', sans-serif;
+    overflow: hidden;
+}
+
+header {
+    position: relative;
+    z-index: 10;
+}
+
+header > .menu{
+    top: 30px;
+    left: 60px;
+    position: absolute;
+    display: flex;
+    column-gap: 50px;
+}
+
+header>.menu>.menu-options>a {
+    text-decoration: none;
+    color: var(--white);
+    padding: 5px;
+    margin: 10px;
+    font-size: var(-font-size);
+}
+
+header>.menu>.hamburger-icon {
+    display: none;
+}
+
+@media screen and (max-width: 400px) {
+    body{
+        overflow: auto;
+    }
+
+    header {
+        align-items: center;
+        justify-content: center;
+    }
+
+    header>.menu{
+        left: 20px;
+    }
+
+    header>.menu>.hamburger-icon {
+        display: flex;
+    }
+
+    header>.menu>.menu-options {
+        display: none;
+    }
+
+}
